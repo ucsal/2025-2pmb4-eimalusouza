@@ -27,11 +27,13 @@ public class App {
             circleItem.addActionListener(e -> panel.clear());
             
             menu.add(circleItem);
-            menu.add(rectItem);
+            JMenuItem rectItem = null;
+			menu.add(rectItem);
             menu.addSeparator();
-            menu.add(clearItem);
-            menuBar.add(menu);
-            frame.setJMenubar(menuBar);
+            JMenuItem clearItem = null;
+			menu.add(clearItem);
+            menubar.add(menu);
+            frame.setJMenuBar(menubar);
             
             frame.setLayout(new BorderLayout());
             frame.add(panel, BorderLayout.CENTER);
